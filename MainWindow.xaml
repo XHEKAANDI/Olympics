@@ -1,0 +1,69 @@
+﻿<Window x:Class="WpfAtleti.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAtleti"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition />
+            <RowDefinition Height="45"/>
+            <RowDefinition/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition />
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="6" FontWeight="Black" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center">Athletes Of The Olympic's Games</Label>
+        <Label Grid.Column="0" Grid.Row="2" FontWeight="Bold" FontSize="15">Name</Label>
+        <Label Grid.Column="1" Grid.Row="2" FontWeight="Bold" FontSize="15">Sex</Label>
+        <Label Grid.Column="2" Grid.Row="2" FontWeight="Bold" FontSize="15">Games</Label>
+        <Label Grid.Column="3" Grid.Row="2" FontWeight="Bold" FontSize="15">Sport</Label>
+        <Label Grid.Column="4" Grid.Row="2" FontWeight="Bold" FontSize="15">Event</Label>
+        <Label Grid.Column="5" Grid.Row="2" FontWeight="Bold" FontSize="15">Medal</Label>
+        <Label Grid.Column="5" Grid.Row="7" VerticalAlignment="Center" HorizontalAlignment="Center">Righe per pagina:</Label>
+        <Label Grid.Column="2" Grid.Row="7" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">Pagina 1 di 269000</Label>
+      
+        <Button Grid.Column="6" Grid.Row="3" FontWeight="Bold" FontSize="15" Margin="5 5 5 5" HorizontalAlignment="Center" VerticalAlignment="Center">Azzera Filtri</Button>
+        <Button Grid.Column="1" Grid.Row="6" Margin="10 10 10 10">&lt;&lt;</Button>
+        <Button Grid.Column="2" Grid.Row="6" Margin="10 10 10 10">&lt;</Button>
+        <Button Grid.Column="3" Grid.Row="6" Margin="10 10 10 10">&gt;</Button>
+        <Button Grid.Column="4" Grid.Row="6" Margin="10 10 10 10">&gt;&gt;</Button>
+
+        <TextBox Grid.Column="0" Grid.Row="3" Margin="0 15 0 15"/>
+        <ComboBox Grid.Column="1" Grid.Row="3" Margin="0 15 0 15"/>
+        <ComboBox Grid.Column="2" Grid.Row="3" Margin="0 15 0 15"/>
+        <ComboBox Grid.Column="3" Grid.Row="3" Margin="0 15 0 15"/>
+        <ComboBox Grid.Column="4" Grid.Row="3" Margin="0 15 0 15"/>
+        <ComboBox Grid.Column="5" Grid.Row="3" Margin="0 15 0 15"/>
+        <ComboBox Grid.Column="6" Grid.Row="7" Margin="10 10 10 10"/>
+
+        <DataGrid Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="7" Margin="0,0,0,0" Grid.RowSpan="2"/>
+
+       
+        <Image Grid.Column="6" HorizontalAlignment="Left" Height="63" Width="80" Margin="9.6,10,0,0" Grid.RowSpan="2" VerticalAlignment="Top"  Source="Immagine/Logo.png" RenderTransformOrigin="0.506,0.803"/>
+
+
+
+
+    </Grid>
+
+
+
+
+</Window>
